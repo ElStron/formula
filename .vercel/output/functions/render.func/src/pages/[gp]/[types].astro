@@ -1,0 +1,27 @@
+---
+import LayoutRanking from '../../layouts/LayoutRanking.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+
+	const response = await fetch('https://api.agify.io/?name=meelad');
+	const data = await response.json();
+
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({
+		params: { gp: post.slug, types: String(data.name)},
+		props: data
+	}));
+}
+const name = "";
+const post = Astro.props;
+console.log(name)
+//const { Content } = await post.render();
+const { gp, types } = Astro.params;
+const title = post.title;
+
+---
+
+<LayoutRanking title={post.name}>
+	
+</LayoutRanking>
