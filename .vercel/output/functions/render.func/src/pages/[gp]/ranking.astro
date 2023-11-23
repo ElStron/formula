@@ -1,0 +1,24 @@
+---
+import LayoutRanking from '../../layouts/LayoutRanking.astro';
+import { getCollection } from 'astro:content';
+
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({
+		params: { gp: post.slug },
+		props: post.data
+	}));
+}
+
+
+const post = Astro.props;
+//const { Content } = await post.render();
+const { gp } = Astro.params;
+const title = post.title;
+
+---
+
+<LayoutRanking title={post.title}>
+	
+</LayoutRanking>
