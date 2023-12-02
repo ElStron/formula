@@ -6,7 +6,7 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://formula-astro-test-hu81cpiei-strons-projects.vercel.app/',
+  site: 'https://accediit.com/',
   integrations: [mdx(), sitemap()],
   output: 'server',
   adapter: vercel()
