@@ -1,7 +1,108 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
+<head>
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+</head>
+
+<div class="container">
+	<header class="header">
+		<nav class="nav" id="nav">
+			<span class="nav__title">F1Calendar</span>
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#">Results</a></li>
+				<li class="nav__item"><a href="#">Calendar</a></li>
+				<li class="nav__item"><a href="#">Sheandoule</a></li>
+			</ul>
+		</nav>
+	</header>
+	<aside>
+	aside
+	</aside>
+	<main class="main">
+		main
+	</main>
+	<footer class="footer">fooo</footer>
+</div>
+
+<style>
+	.container {
+		display: grid;
+		grid-template-areas: 
+						"header header header header"
+						"aside main main main"
+						"footer footer footer footer";
+		grid-template-columns: 300px 1fr;
+		grid-template-rows:auto 1fr auto;
+		min-height: 100vh;
+	}
+	.container header {
+		grid-area: header;
+	}
+	.container aside {
+		grid-area: aside;
+		background-color: aqua;
+	}
+	.container main {
+		grid-area: main;
+		background-color: aquamarine;
+	}
+	.container footer {
+		grid-area: footer;
+		background-color: brown;
+	}
+
+	.nav {
+		background-color:darkorchid;
+		color: azure;
+		padding: 1.5rem;
+
+		display: grid;
+		gap: 1.5rem;
+		align-items: center;
+		grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+	}
+
+	.nav__title {
+		margin: 0 auto;
+	}
+
+	.nav__list {
+		padding: 0;
+		list-style: none;
+		margin: 0 auto;
+
+		display: grid;
+		justify-content: end;
+		grid-auto-flow: column;
+		gap: 2.5rem;
+	}
+
+	.nav__item a {
+		color:aliceblue;
+		text-decoration: none;
+		font-weight: 400;
+	}
+
+	@media (width < 700px) {
+		.nav__title, .nav__list {
+			margin: unset;
+		}
+		.container {
+			grid-template-areas:
+			"header header header"
+			"aside main main"
+			"footer footer footer";
+			grid-template-columns: 0px 1fr;
+		}
+		.container aside
+	}
+</style>
+
+<!----
 <Layout
 	title="About Me"
 	description="Lorem ipsum dolor sit amet"
@@ -60,3 +161,4 @@ import Layout from '../layouts/BlogPost.astro';
 		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
 	</p>
 </Layout>
+---->
