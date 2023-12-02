@@ -2,7 +2,7 @@
 title: 'Peter Griffin from Family Guy in Fortnite Chapter 5 "Underground"'
 description: 'Peter Griffin from Family Guy and other iconic characters could appear in Fortnite Chapter 5: Season 1 "Underground"'
 pubDate: "Dec 01 2023"
-heroImage: "/image.webp"
+heroImage: "/Peter-Griffin-from-Family-Guy-in-Fortnite-Chapter-5.webp"
 ---
 
 Fortnite Chapter 5: Season 1 "Underground" Unleash the Madness with Iconic Characters
