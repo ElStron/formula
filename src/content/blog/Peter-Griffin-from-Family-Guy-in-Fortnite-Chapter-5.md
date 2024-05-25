@@ -13,7 +13,7 @@ The news became public when the unofficial Fortnite news Twitter account, X/Twit
 
 In an equally surprising twist, Peter Griffin, the animated character from Family Guy, known for his 2D art style, is expected to participate. Rumors about Peter Griffin's inclusion in Fortnite have circulated for years, and the leaked image shows him ditching his everyday attire for a dapper tuxedo. Without a doubt, Solid Snake and Peter Griffin steal the spotlight with their recognizability and their unexpected crossover into the Fortnite universe.
 
-Chapter 5 Season 1 faces heightened expectations, especially after the success of its predecessor, the OG Update, which attracted a staggering 44.7 million players in a single day, marking what Epic Games described as "the biggest day in history." of [Fortnite](https://ifortnite.com)".
+Chapter 5 Season 1 faces heightened expectations, especially after the success of its predecessor, the OG Update, which attracted a staggering 44.7 million players in a single day, marking what Epic Games described as "the biggest day in history." of [Fortnite]
 
 The "Underground" season promises to bring back some familiar faces from other games and cartoons. According to leaker reports, some of the battle pass skins will include Peter Griffin from Family Guy, Solid Snake from Metal Gear, Survey Tiger Guy, The Underground Jonesy and others related to survival.
 
