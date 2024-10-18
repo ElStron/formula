@@ -21,7 +21,7 @@ jobs:
       - name: Run Build
         run: npm run build
       - name: Create ZIP
-        run: zip -r dist.zip .vercel/output/static
+        run: zip -rj dist.zip .vercel/output/static/*
       - name: Deploy to PHP server
         run: curl -X POST -F artifact=@dist.zip ${{ secrets.DEPLOY_URL }}
             
