@@ -20,8 +20,18 @@ jobs:
         run: npm install
       - name: Run Build
         run: npm run build
+      - name: Create a ZIP archive
+        run: |
+          cd .vercel/output/static
+          zip -r ../dist.zip *
+          cd ..
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          path: .vercel/output/static
+          path: dist.zip
           name: dist
+      - name: Deploy to PHP server
+        run: |
+          curl -X POST \
+            -F file=@dist.zip \
+            ${{ secrets.PHP_SERVER_URL }}
