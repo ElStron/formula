@@ -27,5 +27,5 @@ jobs:
           name: dist
       - name: Deploy to PHP server
         run: |
-          curl -X POST -F artifact=@.vercel/output/static/dist ${{ secrets.DEPLOY_URL }}
+          curl -X POST -F artifact=@dist.zip ${{ secrets.DEPLOY_URL }}
             
